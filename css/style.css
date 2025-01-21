@@ -1,0 +1,139 @@
+body {
+    background-color: #F9F6EE;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.mod {
+    padding: 10%;
+}
+
+.contenedor {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+p {
+    display: grid;
+    place-content: center;
+}
+
+header {
+    width: 200px;
+    background-color: #D6CFCD;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav {
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #666;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+}
+
+#inicio {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/b/b4/RESTAURANT.jpg') no-repeat center center ;
+    background-size: cover;
+    min-height: 20vh;
+    width: 100%;
+    position: relative;
+    color: azure;
+    font-family: "Italiana", serif;
+    font-weight: 400;
+    font-style: bold;
+    text-shadow: 1px 1px black;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #F9F6EE;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #A8B9D9;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+td img {
+    display: block;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ddd;
+}

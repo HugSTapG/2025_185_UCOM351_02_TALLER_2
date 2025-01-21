@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de HTML5-Restaurante</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>Mi Restaurante</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#seccion1">Menu</a></li>
+                    <li><a href="#seccion2">Reservas</a></li>
+                    <li><a href="#acerca-de">Acerca de</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="inicio" >
+                <h2>Bienvenido</h2>
+                <p>Este es un restaurante, aqui se vende comida.</p>
+            </section>
+
+            <section id="seccion1">
+                <h2>Menu</h2>
+                <p>Menus cercanos a la fecha actual</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ayer</th>
+                            <th>Hoy</th>
+                            <th>Mañana</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Pizza_%281%29.jpg" 
+                                alt="Pizza" width="50" height="50"></td>
+                            <td><img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Onion_soup%2C_Balthazar.jpg" 
+                                alt="Onion_Soup" width="50" height="50"></td>
+                            <td><img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Risotto-dish.jpg" 
+                                alt="Risotto-dish" width="50" height="50"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Bread_Sticks.jpg"
+                                alt="Bread_Sticks" width="50" height="50"></td>
+                            <td><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Meaty_Lasagna_8of8_%288736299782%29.jpg" 
+                                alt="Meaty_Lasagna" width="50" height="50"></td>
+                            <td><img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Linguine_with_cuttlefish.jpg" 
+                                alt="Linguine_with_cuttlefish" width="50" height="50"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="seccion2">
+                <h2>Reservas</h2>
+                <p>Para aplicar a una reserva, ingrese sus datos en la siguiente forma:</p>
+                <div class="mod">
+                    <form action="procesar.php" method="post">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" cols="30" required></textarea>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </section>
+
+            <section id="acerca-de">
+                <h2>Acerca de</h2>
+                <p>Información del Restaurante</p>
+                <ul>
+                    <li>No hay mesas disponibles.</li>
+                    <li>Cerrado por festividades.</li>
+                    <li>En Renovacion.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CulinariosSA</p>
+    </footer>
+</body>
+</html>
